@@ -8,7 +8,7 @@ import (
 
 	"github.com/dsoprea/go-logging"
 
-	"github.com/dsoprea/go-exif/v3/common"
+	"github.com/dride/go-exif/v3/common"
 )
 
 func Test_ByteWriter_writeAsBytes_uint8(t *testing.T) {

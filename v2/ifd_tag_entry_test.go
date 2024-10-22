@@ -6,7 +6,7 @@ import (
 
 	"github.com/dsoprea/go-logging"
 
-	"github.com/dsoprea/go-exif/v2/common"
+	"github.com/dride/go-exif/v2/common"
 )
 
 func TestIfdTagEntry_RawBytes_Allocated(t *testing.T) {

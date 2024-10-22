@@ -7,7 +7,7 @@ import (
 
 	"github.com/dsoprea/go-logging"
 
-	"github.com/dsoprea/go-exif/v2/common"
+	"github.com/dride/go-exif/v2/common"
 )
 
 func TestTag8828Oecf_String(t *testing.T) {

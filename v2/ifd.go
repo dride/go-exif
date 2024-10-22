@@ -3,7 +3,7 @@ package exif
 import (
 	"github.com/dsoprea/go-logging"
 
-	"github.com/dsoprea/go-exif/v2/common"
+	"github.com/dride/go-exif/v2/common"
 )
 
 // TODO(dustin): This file now exists for backwards-compatibility only.

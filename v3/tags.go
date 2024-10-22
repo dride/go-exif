@@ -7,7 +7,7 @@ import (
 	"github.com/dsoprea/go-logging"
 	"gopkg.in/yaml.v2"
 
-	"github.com/dsoprea/go-exif/v3/common"
+	"github.com/dride/go-exif/v3/common"
 )
 
 const (

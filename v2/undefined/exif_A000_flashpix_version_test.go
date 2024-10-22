@@ -7,7 +7,7 @@ import (
 
 	"github.com/dsoprea/go-logging"
 
-	"github.com/dsoprea/go-exif/v2/common"
+	"github.com/dride/go-exif/v2/common"
 )
 
 func TestTagA000FlashpixVersion_String(t *testing.T) {

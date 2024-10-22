@@ -1,27 +1,24 @@
 [![Build Status](https://app.travis-ci.com/dsoprea/go-exif.svg?branch=master)](https://app.travis-ci.com/dsoprea/go-exif)
 [![codecov](https://codecov.io/gh/dsoprea/go-exif/branch/master/graph/badge.svg)](https://codecov.io/gh/dsoprea/go-exif)
-[![Go Report Card](https://goreportcard.com/badge/github.com/dsoprea/go-exif/v3)](https://goreportcard.com/report/github.com/dsoprea/go-exif/v3)
-[![GoDoc](https://godoc.org/github.com/dsoprea/go-exif/v3?status.svg)](https://godoc.org/github.com/dsoprea/go-exif/v3)
+[![Go Report Card](https://goreportcard.com/badge/github.com/dride/go-exif/v3)](https://goreportcard.com/report/github.com/dride/go-exif/v3)
+[![GoDoc](https://godoc.org/github.com/dride/go-exif/v3?status.svg)](https://godoc.org/github.com/dride/go-exif/v3)
 
 # Overview
 
 This package provides native Go functionality to parse an existing EXIF block, update an existing EXIF block, or add a new EXIF block.
-
 
 # Getting
 
 To get the project and dependencies:
 
 ```
-$ git clone https://github.com/dsoprea/go-exif.git
+$ git clone https://github.com/dride/go-exif.git
 $ cd v3
 ```
-
 
 # Requirements
 
 - Go >= 1.17: Due to a breakage with "go test", we only officially support 1.17 for testing/CI reasons. It may still work in earlier versions if such a need is critically required, however.
-
 
 # Scope
 
@@ -29,7 +26,7 @@ This project is concerned only with parsing and encoding raw EXIF data. It does
 not understand specific file-formats. This package assumes you know how to
 extract the raw EXIF data from a file, such as a JPEG, and, if you want to
 update it, know how to write it back. File-specific formats are not the concern
-of *go-exif*, though we provide
+of _go-exif_, though we provide
 [exif.SearchAndExtractExif][search-and-extract-exif] and
 [exif.SearchFileAndExtractExif][search-file-and-extract-exif] as brute-force
 search mechanisms that will help you explore the EXIF information for newer
@@ -45,7 +42,6 @@ efficient processing of the corresponding image formats:
 
 See the [SetExif example in go-jpeg-image-structure][jpeg-set-exif] for
 practical information on getting started with JPEG files.
-
 
 # Usage
 
@@ -80,26 +76,24 @@ with the standard TIFF information, but you, alternatively, may choose
 something totally different (to support parsing any kind of EXIF data that does
 not follow or is not relevant to TIFF at all).
 
-
 # Standards and Customization
 
 This project is configuration driven. By default, it has no knowledge of tags
 and IDs until you load them prior to using (which is incorporated in the
 examples). You are just as easily able to add additional custom IFDs and custom
 tags for them. If desired, you could completely ignore the standard information
-and load *totally* non-standard IFDs and tags.
+and load _totally_ non-standard IFDs and tags.
 
 This would be useful for divergent implementations that add non-standard
 information to images. It would also be useful if there is some need to just
 store a flat list of tags in an image for simplified, proprietary usage.
-
 
 # Reader Tool
 
 There is a runnable reading/dumping tool included:
 
 ```
-$ go install github.com/dsoprea/go-exif/v3/command/exif-read-tool@latest
+$ go install github.com/dride/go-exif/v3/command/exif-read-tool@latest
 $ exif-read-tool --filepath "<media file-path>"
 ```
 
@@ -143,15 +137,13 @@ Example output:
 ...
 ```
 
-
 # Testing
 
 The traditional method:
 
 ```
-$ go test github.com/dsoprea/go-exif/v3/...
+$ go test github.com/dride/go-exif/v3/...
 ```
-
 
 # Release Notes
 
@@ -171,8 +163,7 @@ undefined-type tag-processing (which affects most photographic images) has also
 been overhauled and streamlined. It is now complete and stable. Adoption is
 strongly encouraged.
 
-
-# *Contributing*
+# _Contributing_
 
 EXIF has an excellently-documented structure but there are a lot of devices and
 manufacturers out there. There are only so many files that we can personally
@@ -192,7 +183,6 @@ If you are able to test 100K+ files, I will give you credit on the project. The
 further back in time your images reach, the higher in the list your name/company
 will go.
 
-
 # Contributors/Testing
 
 Thank you to the following users for solving non-trivial issues, supporting the
@@ -205,8 +195,8 @@ providing their non-trivial time or image corpus to test go-exif:
 In addition to these, it has been tested on my own collection, north of 560K
 images.
 
-[search-and-extract-exif]: https://godoc.org/github.com/dsoprea/go-exif/v3#SearchAndExtractExif
-[search-file-and-extract-exif]: https://godoc.org/github.com/dsoprea/go-exif/v3#SearchFileAndExtractExif
+[search-and-extract-exif]: https://godoc.org/github.com/dride/go-exif/v3#SearchAndExtractExif
+[search-file-and-extract-exif]: https://godoc.org/github.com/dride/go-exif/v3#SearchFileAndExtractExif
 [jpeg-set-exif]: https://godoc.org/github.com/dsoprea/go-jpeg-image-structure#example-SegmentList-SetExif
-[examples]: https://godoc.org/github.com/dsoprea/go-exif/v3#pkg-examples
-[releases]: https://github.com/dsoprea/go-exif/releases
+[examples]: https://godoc.org/github.com/dride/go-exif/v3#pkg-examples
+[releases]: https://github.com/dride/go-exif/releases

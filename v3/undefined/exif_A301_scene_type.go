@@ -7,7 +7,7 @@ import (
 
 	"github.com/dsoprea/go-logging"
 
-	"github.com/dsoprea/go-exif/v3/common"
+	"github.com/dride/go-exif/v3/common"
 )
 
 type TagExifA301SceneType uint32
