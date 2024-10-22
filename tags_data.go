@@ -245,7 +245,7 @@ IFD/GPSInfo:
   type_name: RATIONAL
 - id: 0x0007
   name: GPSTimeStamp
-  type_name: RATIONAL
+  type_name: ASCII
 - id: 0x0008
   name: GPSSatellites
   type_name: ASCII
